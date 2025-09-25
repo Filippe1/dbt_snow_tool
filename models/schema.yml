@@ -1,0 +1,12 @@
+version: 2
+
+sources:
+  - name: raw
+    database: SNOWFLAKE_LEARNING_DB
+    schema: AAA_LOAD_SAMPLE_DATA_FROM_S3
+    tables:
+      - name: menu
+
+models:
+  - name: menu_sales
+    description: "Aggregated sales and profit by menu item and brand"
